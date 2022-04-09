@@ -26,7 +26,7 @@ SECRET_KEY = config('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = config('DEBUG', default=False, cast=bool) # True
 
-ALLOWED_HOSTS = ['easy2buysdp3.azurewebsites.net']
+ALLOWED_HOSTS = ['*','easy2buysdp3.azurewebsites.net']
 
 
 # Application definition
@@ -92,7 +92,8 @@ AUTH_USER_MODEL = 'accounts.Account'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+      'NAME': str(os.path.join(BASE_DIR, "db.sqlite3")),
+
     }
 }
 
@@ -142,7 +143,7 @@ STATICFILES_DIRS =[
 
 
 MEDIA_URL ='/media/'
-MEDIA_ROOT =BASE_DIR / 'media'
+STATIC_ROOT =BASE_DIR / 'media'
 
 from django.contrib.messages import constants as messages
 MESSAGE_TAGS = {
