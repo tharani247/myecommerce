@@ -1,0 +1,4 @@
+{
+    "appService.deploySubpath": ".",
+    "appService.defaultWebAppToDeploy": "/subscriptions/73a7ba18-aac0-4e7c-ac6f-b104b96eab93/resourceGroups/appsvc_linux_centralus/providers/Microsoft.Web/sites/easy2buysdp3"
+}
