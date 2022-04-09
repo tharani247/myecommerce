@@ -26,7 +26,7 @@ SECRET_KEY = config('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = config('DEBUG', default=False, cast=bool) # True
 
-ALLOWED_HOSTS = ['*','easy2buysdp3.azurewebsites.net']
+ALLOWED_HOSTS = ['*','sdp3easy2buy.azurewebsites.net']
 
 
 # Application definition
